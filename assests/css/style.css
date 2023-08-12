@@ -1,0 +1,11 @@
+@import url(https://db.onlinewebfonts.com/c/a1d0120b37754be8e80e39ab6ab95130?family=BBC+Reith+Sans);
+@import url(https://db.onlinewebfonts.com/c/92d9892fa0ef64406bf151c8f730eff2?family=BBC+Reith+Serif);
+body {
+  font-family: "BBC Reith Sans";
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: "BBC Reith Serif";
+}/*# sourceMappingURL=style.css.map */

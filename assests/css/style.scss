@@ -1,0 +1,23 @@
+@import url(https://db.onlinewebfonts.com/c/a1d0120b37754be8e80e39ab6ab95130?family=BBC+Reith+Sans);
+@import url(https://db.onlinewebfonts.com/c/92d9892fa0ef64406bf151c8f730eff2?family=BBC+Reith+Serif);
+
+// Fonts
+$bbc_font_sans: "BBC Reith Sans";
+$bbc_font_serif: "BBC Reith Serif";
+
+// Colors variables
+$col_red: red;
+$col_black: black;
+
+
+body {
+    font-family: $bbc_font_sans;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: $bbc_font_serif;
+    }
+
+}
