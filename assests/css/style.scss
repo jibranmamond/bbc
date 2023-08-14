@@ -5,14 +5,42 @@
 $bbc_font_sans: "BBC Reith Sans";
 $bbc_font_serif: "BBC Reith Serif";
 
+:root {
+    --background-color-rgba: 30, 32, 44;
+    --background-shadow-rgba: 0, 0, 0;
+    --white-rgba: 255, 255, 255;
+    --black-rgba: 0, 0, 0;
+    --tooltip-color-rgba: 30, 32, 44;
+    --background-color: #1E202C !important;
+    --background-hover: #000000 !important;
+    --primary-color: #BB86FC !important;
+    --secondary-color: #03DAC6 !important;
+    --on-primary: #000000 !important;
+    --on-secondary: #000000 !important;
+    --on-background: #ffffff !important;
+    --text: #2c3e50 !important;
+    --text-light: #b6b6b6 !important;
+    --text-lighter: #b8cdd1 !important;
+    --white: #ffffff !important;
+    --black: #000000 !important;
+    --yellow: #ffc800 !important;
+    --orange: #f4615a !important;
+    --blue: #24b4fb !important;
+    --green: #44e3bb !important;
+    --purple: #8e58b8 !important;
+}
+
 // Colors variables
-$col_red: red;
-$col_black: black;
+$col_red: #b80000;
+$col_black: #000;
+$col_gray: #808080;
+$col_gray1: rgb(217 217 209);
 
 
 body {
     font-family: $bbc_font_sans;
-
+    font-size: 1rem;
+    margin: 0;
     h1,
     h2,
     h3,
@@ -20,4 +48,181 @@ body {
         font-family: $bbc_font_serif;
     }
 
+    * {
+        margin: 0;
+    }
+
+}
+
+
+
+.bg {
+    &--red {
+        background-color: red;
+    }
+
+    &--black {
+        background-color: black;
+    }
+}
+
+.text-color {
+    &--black {
+        color: black;
+    }
+}
+
+.mar-pad {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 1280px;
+    max-width: 1248px;
+    padding: 0 1rem;
+    margin: 0 auto;
+
+}
+
+.navbar {
+    display: flex;
+
+    height: 4rem;
+    align-items: center;
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {}
+
+    &__signin {
+        position: relative;
+        color: $col_black;
+        font-size: 13px;
+        font-weight: 700;
+        margin-left: 1.75rem;
+        text-decoration: none;
+        width: 136px;
+        align-items: center;
+        border-right: 1px solid $col_gray1;
+        padding: 3px 0;
+
+        &::after {
+            content: "";
+            background-color: #0178ff;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            height: 0.125rem;
+            transition: width .2s, opacity .2s;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+
+    }
+
+    &-menu {
+        padding-left: 35px;
+
+        &__list {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            padding: 15px;
+            width: 669px;
+        }
+
+        &__menu-item {
+            &:nth-child(1) a {
+                border-color: #FF0000;
+            }
+
+            &:nth-child(2) a {
+                border-color: $col_black;
+            }
+
+            &:nth-child(3) a {
+                border-color: $col_gray;
+            }
+
+            &:nth-child(4) a {
+                border-color: #673636;
+            }
+
+            &:nth-child(5) a {
+                border-color: #eff70e;
+            }
+
+            &:nth-child(6) a {
+                border-color: #8110f3;
+            }
+
+            &:nth-child(7) a {
+                border-color: #df1584;
+            }
+
+            &:nth-child(8) a {
+                border-color: #1de897;
+            }
+
+            &:nth-child(9) a {
+                border-color: #2dc5e4;
+            }
+
+        }
+
+        &__menu-link {
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            color: $col_black;
+            padding-bottom: 8px;
+
+            &:hover {
+                border-bottom: 3px solid #0178ff;
+            }
+        }
+
+
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 12.5rem;
+        padding: 0.60rem;
+        background-color: #f6f6f6;
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+        gap: 10px;
+
+    }
+}
+
+.bbc-logo {
+    padding-right: 1.25rem;
+}
+
+.sign-sec {
+    display: flex;
+    align-items: center;
+    width: 11rem;
+    max-width: 176px;
+
+    a {}
 }
