@@ -41,6 +41,7 @@ body {
     font-family: $bbc_font_sans;
     font-size: 1rem;
     margin: 0;
+
     h1,
     h2,
     h3,
@@ -50,6 +51,7 @@ body {
 
     * {
         margin: 0;
+        padding: 0;
     }
 
 }
@@ -58,7 +60,7 @@ body {
 
 .bg {
     &--red {
-        background-color: red;
+        background-color: #b80000;
     }
 
     &--black {
@@ -88,11 +90,47 @@ body {
     padding: 0 1rem;
     margin: 0 auto;
 
+
+}
+
+.row {
+    display: flex;
+
+    &--jc-center {
+        justify-content: center;
+    }
+
+    &--jc-space-between {
+        justify-content: space-between;
+    }
+
+    &--jc-space-around {
+        justify-content: space-around;
+    }
+
+    &--ai-center {
+        align-items: center;
+    }
+
+    &--ai-bottom {
+        align-items: end;
+    }
+
+    &--fd-coloumn {
+        flex-direction: column;
+    }
+    &--gap-20 {
+        gap: 1.25rem;
+    }
+
+
+}
+.listfix {
+    list-style: none;
 }
 
 .navbar {
     display: flex;
-
     height: 4rem;
     align-items: center;
 
@@ -142,6 +180,23 @@ body {
             gap: 40px;
             padding: 15px;
             width: 669px;
+        }
+
+        &__extra-menu {
+            display: none;
+            border-top: 2px solid $col_gray1;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+            height: 64px;
+
+            .navbar-menu__menu-item:last-of-type {
+                margin-left: auto;
+
+                svg {
+                    fill: black;
+                }
+            }
         }
 
         &__menu-item {
@@ -213,16 +268,30 @@ body {
 
     }
 }
-
-.bbc-logo {
-    padding-right: 1.25rem;
+.news {
+    padding: 20px 0px 15px 0;
 }
-
-.sign-sec {
+.sub-nav {
     display: flex;
-    align-items: center;
-    width: 11rem;
-    max-width: 176px;
+    list-style: none;
+    & :nth-child(1) a {
+        border-left: none;
+    }
+    &--item {
 
-    a {}
+    }
+    &--link {
+        display: block;
+        padding:0 12px 6px 12px ;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        border-left: 1px solid #bb454f;
+        &:hover {
+            border-bottom: 4px solid #fff;
+        }
+    }
+    &--link.active {
+        border-bottom: 4px solid #fff;
+    }
 }
