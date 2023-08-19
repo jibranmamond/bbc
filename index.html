@@ -10,7 +10,7 @@
 
 <body>
     <header class="container">
-        <div class="navbar">
+        <div class="navbar container-fluid">
             <div class="navbar__info">
                 <a>
                     <svg class="navbar__logo" width="132" height="34" viewbox="0 0 132 34">
@@ -31,9 +31,9 @@
                     <li class="navbar-menu__menu-item"><a class="navbar-menu__menu-link" href="#">Travel</a></li>
                     <li class="navbar-menu__menu-item"><a class="navbar-menu__menu-link" href="#">Future</a></li>
                     <li class="navbar-menu__menu-item"><a class="navbar-menu__menu-link" href="#">Culture</a></li>
-                    <li class="navbar-menu__menu-item"><a class="navbar-menu__menu-link" href="#"><svg
-                                class="orbit-header-more-desktop" width="20" height="4" viewBox="0 0 20 4" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg">
+                    <li class="navbar-menu__menu-item"><a class="navbar-menu__menu-link" href="#"
+                            id="extraMenuIcons"><svg class="orbit-header-more-desktop" width="20" height="4"
+                                viewBox="0 0 20 4" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Overflow" transform="translate(-14.000000, -22.000000)">
                                     <path
                                         d="M18,22 L18,26 L14,26 L14,22 L18,22 Z M34,22 L34,26 L30,26 L30,22 L34,22 Z M26,22 L26,26 L22,26 L22,22 L26,22 Z"
@@ -50,7 +50,60 @@
                         </path>
                     </svg></span><span>Search BBC</span></a>
         </div>
+
+        <ul class="navbar-menu__extra-menu" id="menuExtra">
+            <li class="navbar-menu__menu-item"><a href="" class="navbar-menu__menu-link">TV</a></li>
+            <li class="navbar-menu__menu-item"><a href="" class="navbar-menu__menu-link">Weather</a></li>
+            <li class="navbar-menu__menu-item"><a href="" class="navbar-menu__menu-link">Sounds</a></li>
+            <li class="navbar-menu__menu-item">
+                <a href="" class="navbar-menu__menu-link" id="extraMenuCloseBtn">
+                    <svg width="32" height="32" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.48651 5.71054L5.79834 7.39871L12.3428 14.0225L5.81992 20.6229L7.46434 22.2673L13.9778 15.6768L20.5123 22.2895H20.5135L22.2017 20.6007L15.6567 13.9781L22.1795 7.37712L20.5351 5.73271L14.0216 12.3232L7.48651 5.71054Z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <P></P>
     </header>
+    <div class="container-fluid ">
+        <div class="container bg--red">
+            <div class="row row--fd-coloumn row--jc-center">
+                
+                
+                <a href="" class="news">
+                    <svg xmlns="http://www.w3.org/2000/svg" focusable="false" width="120px"
+                    viewBox="0 0 430.39658 110.75903" enable-background="new 3367.9 3.96 61 15.33"
+                    preserveAspectRatio="xMinYMin meet">
+                    <path
+                    d="M68.982,108.52892q-11.5965-18.582-23.49-37.242-11.895-18.6555-23.49-36.2v73.442H0V2.23092H23.192q12.042,17.9895,23.713,36.052,11.66852,18.063,23.266,36.646V2.22992H92.174v106.298H68.982Zm44.259-106.298h73.145v19.029h-50.25v23.044h44.601v19.029H136.136v26.166h53.075v19.03h-75.97Zm177.914,106.298q-5.055-17.98651-9.886-35.978-4.833-17.9865-9.441-35.978-4.45948,17.9895-9.217,35.978-4.7595,17.991-9.812,35.978H228.566q-7.5825-26.0145-14.57-52.629-6.99-26.6115-13.231-53.67h24.976q3.71545,20.6655,7.88,41.33,4.1595,20.667,8.771,40.586,9.95852-38.802,18.881-77.456h22.3q4.461,19.032,9.143,37.985,4.683,18.95547,9.589,37.836,4.461-19.62453,8.623-39.843,4.15951-20.2155,7.73-40.438h24.531q-6.2445,27.06-13.231,53.67-6.99,26.613-14.57,52.629Zm95.37,2.23a78.3712,78.3712,0,0,1-17.32-1.933,66.25651,66.25651,0,0,1-16.428-6.096v-20.516a63.9326,63.9326,0,0,0,33.748,9.664q10.10857,0,15.387-3.419a10.74975,10.74975,0,0,0,5.278-9.515,9.75149,9.75149,0,0,0-2.602-7.211,18.55926,18.55926,0,0,0-6.913-4.163,99.45515,99.45515,0,0,0-9.663-2.899,110.6498,110.6498,0,0,1-15.462-4.757,45.038,45.038,0,0,1-11.299-6.319,23.84449,23.84449,0,0,1-6.987-8.771,28.94176,28.94176,0,0,1-2.379-12.265,29.44592,29.44592,0,0,1,5.129-17.395A32.71617,32.71617,0,0,1,371.51,3.93892q9.366-3.9375,22.3-3.939a72.22352,72.22352,0,0,1,16.651,1.933,67.68455,67.68455,0,0,1,14.718,5.204v20.219a56.13379,56.13379,0,0,0-14.792-6.244,63.27662,63.27662,0,0,0-16.577-2.231q-9.07045,0-14.049,3.122a9.935,9.935,0,0,0-4.981,8.92,9.09272,9.09272,0,0,0,2.379,6.616,17.3599,17.3599,0,0,0,6.765,4.014q4.383,1.5615,10.332,3.048,7.58248,1.935,14.124,4.237a45.86268,45.86268,0,0,1,11.521,5.872,24.45917,24.45917,0,0,1,7.731,9.069,30.06172,30.06172,0,0,1,2.75,13.529q0,10.55852-5.203,18.063a32.29,32.29,0,0,1-15.016,11.447Q400.353,110.75842,386.525,110.75892Z"
+                    transform="translate(0 0.0001)" style="fill:#fff"></path>
+                </svg>
+            </a>
+
+            <ul class="sub-nav">
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link active ">Home</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">War in Ukraine</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Coronavirus</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Climate</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Video</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">World</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Asia</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">UK</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Buisness</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Tech</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Science</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Entertainment & Arts</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">Health</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">World News TV</a></li>
+                <li class="sub-nav--item"><a href="#" class="sub-nav--link">More</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    </div>
 
     <script src="assests/js/my.js"></script>
 </body>
